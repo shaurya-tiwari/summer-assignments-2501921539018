@@ -18,4 +18,5 @@ public class MaximumAverageSubarrayI {
         int[] arr = {1,12,-5,-6,50,3};
         System.out.println(ms1.findMaxAverage(arr, 4));
     }
+
 }
