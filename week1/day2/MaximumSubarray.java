@@ -1,4 +1,4 @@
-
+// kadane algorithm currentSum =\max(nums[i],currentSum+nums[i]);
 public class MaximumSubarray {
     public int maxSubArray(int[] nums) {
         int cursum = nums[0];
