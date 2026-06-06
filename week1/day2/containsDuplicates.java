@@ -15,7 +15,7 @@ class Solution {
 public class containsDuplicates {
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] nums = { 1,2,2,4};
-        System.out.println(solution.containsDuplicate(nums)); 
+        int[] nums = { 1, 2, 2, 4 };
+        System.out.println(solution.containsDuplicate(nums));
     }
 }
