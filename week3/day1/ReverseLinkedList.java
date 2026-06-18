@@ -1,0 +1,53 @@
+package week3.day1;
+
+import java.util.List;
+
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {
+    }
+
+    ListNode(int val) {
+        this.val = val;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
+    }
+}
+
+public class ReverseLinkedList {
+    public ListNode reverseList(ListNode head) {
+
+        ListNode prev = null;
+        ListNode curNode = head;
+        ListNode next = null;
+
+        while (curNode!= null) {
+            next = curNode.next;
+            curNode.next = prev ;
+            prev = curNode;
+            curNode=next;
+        }
+        return prev;
+    }
+
+    public static void main(String[] args) {
+        ListNode node1 = new ListNode(3);
+        ListNode node2 = new ListNode(2);
+        ListNode node3 = new ListNode(0);
+        ListNode node4 = new ListNode(-4);
+        // Step B: Nodes link
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+
+
+ReverseLinkedList ReverseLinkedList= new ReverseLinkedList();
+ReverseLinkedList.reverseList(node4);
+System.out.println(ReverseLinkedList.reverseList(node1));
+    }
+}
