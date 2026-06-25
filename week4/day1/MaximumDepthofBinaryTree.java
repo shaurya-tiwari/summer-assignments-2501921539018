@@ -1,3 +1,4 @@
+package day1;
 public class MaximumDepthofBinaryTree {
     public class TreeNode {
         int val;
