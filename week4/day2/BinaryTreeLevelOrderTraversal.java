@@ -19,7 +19,7 @@ public class BinaryTreeLevelOrderTraversal {
       }
  }
         public List<List<Integer>> levelOrder(TreeNode root) {
-            List<List<Integer> ans = new ArrayList<>();
+            List<List<Integer>> ans = new ArrayList<>();
 
         if(root == null) {
             return ans;
@@ -40,7 +40,7 @@ public class BinaryTreeLevelOrderTraversal {
                 if(current.left!=null) queue.add(current.left);
                 if(current.right!=null) queue.add(current.right);
             }
-            ans.add(ccurrentlevelist);
+            ans.add(currentlevelist);
         }
 
         return ans;
