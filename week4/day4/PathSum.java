@@ -16,9 +16,6 @@ public class PathSum {
         
         return lefttt||righttt;
     }
-
-
-
     public static void main(String[] args) {
         
     }
